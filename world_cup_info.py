@@ -51,6 +51,8 @@ for i,r in df.iterrows():
 
 app = dash.Dash()
 
+server = app.server
+
 app.layout = [
     html.H1(children="World Cup Information", style={'textAlign': 'center'}),
     dcc.Graph(figure=fig),
