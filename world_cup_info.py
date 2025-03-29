@@ -49,7 +49,7 @@ for i,r in df.iterrows():
             years.append(r[col])
 
 
-app = dash.Dash()
+app = dash.Dash(__name__)
 
 server = app.server
 
